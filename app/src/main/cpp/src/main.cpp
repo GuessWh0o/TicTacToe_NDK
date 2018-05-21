@@ -13,5 +13,5 @@ Java_com_guesswh0o_tictactoe_1ndk_MainActivity_startGame(
 
     TicTacToeGame tacToeGame = TicTacToeGame();
 
-    return env->NewStringUTF(tacToeGame.printBoard().c_str());
+    return env->NewStringUTF(tacToeGame.playGame().c_str());
 }

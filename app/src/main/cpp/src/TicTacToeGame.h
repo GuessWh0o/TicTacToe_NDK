@@ -11,12 +11,18 @@
 
 class TicTacToeGame {
 public:
-    std::string helloTicTac();
-    void clearBoard();
-    std::string printBoard();
+    TicTacToeGame();
+    std::string playGame();
 
 private:
     char board[3][3];
+    void clearBoard();
+    std::string printBoard();
+
+    bool placeMarker(int x, int y, char curPlayer);
+
+    int setXCoord(int coord);
+    int setYCoord(int coord);
 };
 
 
